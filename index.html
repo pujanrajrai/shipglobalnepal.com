@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShipGlobal Nepal - Coming Soon</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center h-screen bg-orange-500 text-black">
+  <div class="container bg-white bg-opacity-80 p-10 rounded-lg max-w-lg w-11/12 text-center">
+    <!-- Logo -->
+    <img src="assets/shipglobalnepal.png" alt="ShipGlobal Nepal Logo" class="mx-auto mb-6 max-w-xs">
+    <h1 class="text-4xl font-bold mb-2">Under Construction</h1>
+    <p class="text-lg mb-6">Our new website is on its way. Stay tuned!</p>
+    <!-- Beautiful Loader -->
+    <div class="loader-container">
+      <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery via CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .loader-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
+    
+    .loader {
+      display: flex;
+      gap: 8px;
+    }
+    
+    .circle {
+      width: 12px;
+      height: 12px;
+      background: #000;
+      border-radius: 50%;
+      animation: bounce 0.5s ease-in-out infinite;
+    }
+    
+    .circle:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+    
+    .circle:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+    
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+  <script>
+    $(document).ready(function() {
+      // Fade in the container on load
+      $('.container').hide().fadeIn(800);
+    });
+  </script>
+</body>
+</html>
